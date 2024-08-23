@@ -7,7 +7,9 @@ module.exports = {
                 'title-gray': 'rgb(112, 112, 112)',
                 'gray-50w': 'rgb(119, 118, 109)',
                 'gray-75w': 'rgb(181, 181, 174)',
-                'gray-100w': 'rgb(147, 147, 147)'
+                'gray-100w': 'rgb(147, 147, 147)',
+                'gray-links':'#777777',
+                'gray-links-hover':'#B5B5AE'
             }
         },
     },
