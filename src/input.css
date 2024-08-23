@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.box-50 {
+    @apply px-4 pt-1 h-[50px] border border-gray-50w flex justify-center items-start text-gray-50w font-bold text-center text-base hover:bg-gray-50w hover:text-white hover:cursor-pointer
+}
+
+.box-75 {
+    @apply px-4 pt-1 h-[75px] border border-gray-75w flex justify-center items-start text-gray-75w font-bold text-center text-base hover:bg-gray-75w hover:text-white hover:cursor-pointer
+}
+
+.box-100 {
+    @apply px-4 pt-1 h-[100px] border border-gray-100w flex justify-center items-start text-gray-100w font-bold text-center text-base hover:bg-gray-100w hover:text-white hover:cursor-pointer
+}
