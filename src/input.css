@@ -10,13 +10,13 @@ body {
 }
 
 .box-50 {
-    @apply px-3 py-[6px] h-[60px] border border-gray-50w flex justify-center items-start text-gray-50w font-bold text-center text-base hover:bg-gray-50w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start
+    @apply px-3 py-[6px] h-[60px] border border-gray-50w flex justify-center items-start text-gray-50w font-bold text-center text-base hover:bg-gray-50w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start lg:border-2
 }
 
 .box-75 {
-    @apply px-3 py-[6px] h-[85px] border border-gray-75w flex justify-center items-start text-gray-75w font-bold text-center text-base hover:bg-gray-75w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start
+    @apply px-3 py-[6px] h-[85px] border border-gray-75w flex justify-center items-start text-gray-75w font-bold text-center text-base hover:bg-gray-75w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start lg:border-2
 }
 
 .box-100 {
-    @apply px-3 py-[6px] h-[100px] border border-gray-100w flex justify-center items-start text-gray-100w font-bold text-center text-base hover:bg-gray-100w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start
+    @apply px-3 py-[6px] h-[100px] border border-gray-100w flex justify-center items-start text-gray-100w font-bold text-center text-base hover:bg-gray-100w hover:text-white hover:cursor-pointer lg:w-[216.28px] lg:text-start lg:justify-start lg:border-2
 }
