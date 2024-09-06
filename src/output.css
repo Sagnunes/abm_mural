@@ -1058,8 +1058,16 @@ body {
     flex-direction: row;
   }
 
+  .sm\:items-start{
+    align-items: flex-start;
+  }
+
   .sm\:items-end{
     align-items: flex-end;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
   }
 
   .sm\:px-16{
