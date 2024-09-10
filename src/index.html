@@ -10,11 +10,43 @@
     <link href="./output.css" rel="stylesheet">
     <title>Mural ABM</title>
 </head>
-<body>
+<body class="relative">
+<div class="bg-[#707070] absolute w-full h-full z-50 px-8 hidden" id="menu">
+    <div class="float-right mt-8 text-white">
+        <i class="fa-solid fa-xmark text-3xl cursor-pointer" id="close"></i>
+    </div>
+    <div class="flex flex-col justify-center items-center mt-[130px]">
+        <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo_white.svg" alt="logo abm" class="h-[95px]"></a>
+        <div class="flex flex-col mt-16 space-y-8 w-full">
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="" class="uppercase text-white">Sobre</a>
+            </div>
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="" class="uppercase text-white">Mural</a>
+            </div>
+            <div class="border-t-2 border-t-white flex justify-center pt-3">
+                <a href="" class="uppercase text-white">Contacte-nos</a>
+            </div>
+            <div class="flex flex-row px-8 space-x-4 justify-center pt-8">
+                <a href="https://www.facebook.com/arquivobibliotecamadeira/"><i
+                        class="fa-brands fa-facebook-f text-white text-xl"></i></a>
+                <a href="https://www.instagram.com/arquivo.biblioteca.madeira/"><i
+                        class="fa-brands fa-instagram text-white text-xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCJ10uMI0Lk1GGE_F5EHrBcg"> <i
+                        class="fa-brands fa-youtube text-white text-xl"></i></a>
+            </div>
+            <div class="mt-8">
+                <p class="text-sm text-white text-center">© Arquivo Regional e Biblioteca da Madeira <br> Todos os
+                    direitos
+                    reservados.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <nav class="flex w-full items-center justify-around py-4 lg:items-end lg:fixed bg-white lg:top-0 lg:z-50 lg:scroll-b">
-    <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo.svg" alt="logo abm" class="h-[70px]"></a>
-    <i class="fa-solid fa-bars lg:hidden"></i>
-    <div class="hidden flex-row space-x-4 lg:flex border-b py-2 border-[#707070] w-[1000px] items-center justify-end">
+    <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo.svg" alt="logo abm" class="h-[95px]"></a>
+    <i class="fa-solid fa-bars md:hidden cursor-pointer" id="open"></i>
+    <div class="hidden flex-row space-x-4 md:flex border-b py-2 border-[#707070] w-[1000px] items-center justify-end">
         <a href="info.html" class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover">Sobre</a>
         <a href="index.html"
            class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover">Mural</a>
@@ -22,7 +54,6 @@
            class="text-base uppercase font-bold text-gray-links hover:text-gray-links-hover" target="_blank">Contacte-nos</a>
     </div>
 </nav>
-
 <main class="container mt-16 mx-auto">
     <div class="px-4 lg:px-16 lg:flex lg:flex-col lg:items-center">
         <h1 class="text-xl text-title-gray text-center font-bold leading-none lg:text-3xl lg:w-[650px] lg:mt-[100px]">
@@ -259,7 +290,8 @@
                class="box-100 lg:absolute lg:-top-[531px] lg:left-[430px] lg:w-[263px]">
                 Maria do Carmo Rodrigues
             </a>
-            <a href="doacao-notfound.html" class="box-50 lg:absolute lg:-top-[520px] lg:left-[45%] lg:h-[64px] lg:w-[217px]">
+            <a href="doacao-notfound.html"
+               class="box-50 lg:absolute lg:-top-[520px] lg:left-[45%] lg:h-[64px] lg:w-[217px]">
                 Guilherme Correia
             </a>
         </div>
@@ -278,7 +310,8 @@
             <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[562px] lg:left-[1px] lg:h-[89px]">
                 Elísio Amador
             </a>
-            <a href="doacao-notfound.html" class="box-75 lg:absolute lg:-top-[562px] lg:left-[14%] lg:h-[89px] lg:w-[217px]">
+            <a href="doacao-notfound.html"
+               class="box-75 lg:absolute lg:-top-[562px] lg:left-[14%] lg:h-[89px] lg:w-[217px]">
                 João de Freitas Martins S.A
             </a>
         </div>
@@ -471,12 +504,13 @@
     </div>
 </main>
 
-<footer class="bg-[#6F7070] p-14 mt-10 flex flex-col lg:flex-row">
+<footer class="bg-[#6F7070] px-[2rem] lg:px-[7.5rem] py-[2rem] mt-10 flex flex-col lg:flex-row">
     <div class="flex flex-row ">
         <div class="p-8">
-            <img src="../assets/logo_white.svg" alt="logo" class="h-[80px] lg:h-full">
+            <a href="https://abm.madeira.gov.pt/"><img src="../assets/logo_white.svg" alt="logo"
+                                                       class="hidden sm:block h-[80px] lg:h-full"></a>
         </div>
-        <div class="border-white border-l p-8 space-y-4">
+        <div class="hidden sm:block border-white border-l p-8 space-y-4">
             <p class="text-xs text-white">Caminho dos Álamos, nº35, <br> Santo António <br> 9020-064 Funchal</p>
             <div>
                 <p class="text-xs text-white">+(351) 291 145 310</p>
@@ -499,5 +533,18 @@
         </div>
     </div>
 </footer>
+<script>
+    let open = document.getElementById('open');
+    let close = document.getElementById('close');
+    let menu = document.getElementById('menu');
+
+    open.addEventListener('click', function () {
+        menu.classList.remove('hidden');
+    });
+
+    close.addEventListener('click', function () {
+        menu.classList.add('hidden');
+    });
+</script>
 </body>
 </html>
