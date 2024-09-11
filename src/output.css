@@ -1523,6 +1523,14 @@ body {
     top: 2px;
   }
 
+  .lg\:bottom-\[2px\]{
+    bottom: 2px;
+  }
+
+  .lg\:bottom-\[18px\]{
+    bottom: 18px;
+  }
+
   .lg\:z-50{
     z-index: 50;
   }
