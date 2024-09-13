@@ -1791,6 +1791,18 @@ body {
     right: 529px;
   }
 
+  .lg\:bottom-\[-218px\]{
+    bottom: -218px;
+  }
+
+  .lg\:left-\[457px\]{
+    left: 457px;
+  }
+
+  .lg\:bottom-\[-217px\]{
+    bottom: -217px;
+  }
+
   .lg\:z-50{
     z-index: 50;
   }
